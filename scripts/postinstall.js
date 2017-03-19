@@ -14,7 +14,6 @@
 */
 
 'use strict'
-
 // Load modules
 let env = require('./env')
 let alert = require('./alert')
@@ -72,6 +71,9 @@ let setupProjectFolder = function (callback) {
       fs.copySync(abs(from, '.babelrc'), abs(to, '.babelrc'))
       // Update .gitignore
       fs.copySync(abs(from, '.gitignore'), abs(to, '.gitignore'))
+        // Copy Vuex folder if not exists
+      fs.copySync(abs(from, 'app/vuex'), abs(to, 'app/vuex')) 
+
       // Alert
       alert('Project folder setup done.')
       // callback
