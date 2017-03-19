@@ -12,3 +12,4 @@ database-backup.json
 ftp-config.json
 node_modules/
 snapshots/
+/.project
