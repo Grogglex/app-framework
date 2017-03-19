@@ -29,4 +29,4 @@ database-backup.json
 
 # Exclude FTP config file
 ftp-config.json
-
+/.project
