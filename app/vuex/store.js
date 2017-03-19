@@ -9,7 +9,7 @@ const debug = process.env.NODE_ENV !== 'production'
 // the mutation methods. The store is available in
 // components by using either maps(mapgetters/mapstate)
 // or by directily referencing the store as this.$store
-store  = new Vuex.Store({
+let store  = new Vuex.Store({
   modules: {
   },
   strict: debug

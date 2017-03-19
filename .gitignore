@@ -13,3 +13,4 @@ ftp-config.json
 node_modules/
 snapshots/
 /.project
+.tern*
