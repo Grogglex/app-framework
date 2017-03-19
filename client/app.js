@@ -1120,6 +1120,8 @@ mixins.manageState = {
 function initF7VueApp () {
   // Load Vue
   let vue = require('vue/dist/vue.common.js')
+  // Import Vuex and Store
+  var store = require(process.env.APP_ROOT_FROM_SCRIPTS + 'vuex/store.js')
   // Load Framework7
   require('../vendor/framework7/js/framework7.js')
   // Load Framework7-Vue (with workaround for theme integration)
@@ -1139,6 +1141,7 @@ function initF7VueApp () {
   new vue({ // eslint-disable-line
     // Define root element
     el: '#app',
+    store: store,
     template: '<app />',
     components: {app: appComponent},
     // Load local mixins
