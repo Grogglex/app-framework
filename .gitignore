@@ -24,10 +24,9 @@ snapshots/
 
 # Exclude database backups (deprecated)
 database-backup.json
-<<<<<<< HEAD
 
 # Exclude FTP config file
 ftp-config.json
-=======
+
 /.project
->>>>>>> Add comment to Vuex store
+.tern*
